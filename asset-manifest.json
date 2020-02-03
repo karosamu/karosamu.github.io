@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.234ef9b7.chunk.css",
-    "main.js": "/static/js/main.dacb9cf9.chunk.js",
-    "main.js.map": "/static/js/main.dacb9cf9.chunk.js.map",
+    "main.css": "/static/css/main.b11d2002.chunk.css",
+    "main.js": "/static/js/main.6c1be838.chunk.js",
+    "main.js.map": "/static/js/main.6c1be838.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d703c616.js",
     "runtime-main.js.map": "/static/js/runtime-main.d703c616.js.map",
     "static/css/2.47e06e2e.chunk.css": "/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.13d80a81.chunk.js": "/static/js/2.13d80a81.chunk.js",
-    "static/js/2.13d80a81.chunk.js.map": "/static/js/2.13d80a81.chunk.js.map",
+    "static/js/2.75f455d3.chunk.js": "/static/js/2.75f455d3.chunk.js",
+    "static/js/2.75f455d3.chunk.js.map": "/static/js/2.75f455d3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9c0300e1fa978ff493e1fd61cf7613ef.js": "/precache-manifest.9c0300e1fa978ff493e1fd61cf7613ef.js",
+    "precache-manifest.ba7ace8822db7a45bbf83ec64255ce20.js": "/precache-manifest.ba7ace8822db7a45bbf83ec64255ce20.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.234ef9b7.chunk.css.map": "/static/css/main.234ef9b7.chunk.css.map",
-    "static/js/2.13d80a81.chunk.js.LICENSE": "/static/js/2.13d80a81.chunk.js.LICENSE",
+    "static/css/main.b11d2002.chunk.css.map": "/static/css/main.b11d2002.chunk.css.map",
+    "static/js/2.75f455d3.chunk.js.LICENSE": "/static/js/2.75f455d3.chunk.js.LICENSE",
     "static/media/doctmpl.png": "/static/media/doctmpl.391e77a5.png",
     "static/media/foldertmpl.png": "/static/media/foldertmpl.d9d1085e.png",
     "static/media/githubtmpl.png": "/static/media/githubtmpl.b755f635.png",
     "static/media/infotmpl.png": "/static/media/infotmpl.a523ea46.png",
     "static/media/linkedintmpl.png": "/static/media/linkedintmpl.3ed14e50.png",
-    "static/media/mailtmpl.png": "/static/media/mailtmpl.73b36419.png"
+    "static/media/mailtmpl.png": "/static/media/mailtmpl.73b36419.png",
+    "static/media/todo.png": "/static/media/todo.6dfd9eb7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d703c616.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.13d80a81.chunk.js",
-    "static/css/main.234ef9b7.chunk.css",
-    "static/js/main.dacb9cf9.chunk.js"
+    "static/js/2.75f455d3.chunk.js",
+    "static/css/main.b11d2002.chunk.css",
+    "static/js/main.6c1be838.chunk.js"
   ]
 }
