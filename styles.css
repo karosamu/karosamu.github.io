@@ -181,8 +181,11 @@ body {
     }
 
     .hamburger:hover .menu a {
+        transition: 0.4s;
         pointer-events: unset !important;
         cursor: pointer !important;
+        width: auto;
+        font-size: 1em;
     }
 
     .hamburger:hover .menu {
@@ -262,11 +265,11 @@ body {
 }
 
 .hamburger .menu a {
-    pointer-events: none !important;
-    cursor: default !important;
-    display: block;
+    display: none;
     color: var(--color4);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 0px;
+    font-size: 0px;
 }
