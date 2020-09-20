@@ -180,6 +180,11 @@ body {
         border-radius: 10px;
     }
 
+    .hamburger:hover .menu a {
+        pointer-events: unset;
+        cursor: pointer;
+    }
+
     .hamburger:hover .menu {
         display: flex;
         flex-direction: column;
@@ -257,6 +262,8 @@ body {
 }
 
 .hamburger .menu a {
+    pointer-events: none;
+    cursor: default;
     display: block;
     color: var(--color4);
     text-align: center;
