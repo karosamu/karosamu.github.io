@@ -185,7 +185,7 @@ body {
         cursor: pointer;
     }
 
-    .hamburger:hover .hamburger:focus .menu {
+    .hamburger:hover .menu {
         display: flex;
         flex-direction: column;
     }
