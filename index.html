@@ -1,16 +1,18 @@
 <html>
 
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karolis Samuolis</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div id="loading">
+    </div>
     <div class="nav">
         <ul>
             <li>
@@ -27,6 +29,9 @@
             </li>
         </ul>
     </div>
+    <div class="hamburger">
+        t
+    </div>
     <div id="home" class="home main">
         <div class="card">
             <div class="card-header">
@@ -40,17 +45,14 @@
             </div>
         </div>
         <div class="sub-cards">
-            <a href="mailto:karolissamuolis@gmail.com"
-                class="sub-card email">
-                    E-mail <span>karolissamuolis@gmail.com</span>
+            <a href="mailto:karolissamuolis@gmail.com" class="sub-card email">
+                E-mail <span>karolissamuolis@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/karolis-samuolis/"
-                onclick="window.open(this.href,'_blank');return false;"
-                class="sub-card linkedin">
+                onclick="window.open(this.href,'_blank');return false;" class="sub-card linkedin">
                 LinkedIn <span>@karolis-samuolis</span>
             </a>
-            <a href="https://github.com/karosamu"
-                onclick="window.open(this.href,'_blank');return false;"
+            <a href="https://github.com/karosamu" onclick="window.open(this.href,'_blank');return false;"
                 class="sub-card github">
                 Github <span>@karosamu</span>
             </a>
@@ -68,6 +70,7 @@
     </div>
     <div id="contact" class="contact main">
         Contact me
+    </div>
     </div>
 </body>
 

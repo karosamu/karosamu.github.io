@@ -20,3 +20,5 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+window.onload = function(){ document.getElementById("loading").style.cssText = "display: none; transition: 1s" }
