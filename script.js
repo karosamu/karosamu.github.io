@@ -21,4 +21,4 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-window.onload = function(){ document.getElementById("loading").style.cssText = "display: none; transition: 1s" }
+window.onload = function(){ document.getElementById("loading").style.cssText = "transition: 1s; display: none;" }
