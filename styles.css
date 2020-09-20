@@ -180,7 +180,8 @@ body {
         border-radius: 10px;
     }
 
-    .hamburger:focus .menu a {
+    .hamburger:hover .menu a {
+        transition-delay: 1s !important;
         pointer-events: unset;
         cursor: pointer;
     }
@@ -262,8 +263,8 @@ body {
 }
 
 .hamburger .menu a {
-    pointer-events: none;
-    cursor: default;
+    pointer-events: none !important;
+    cursor: default !important;
     display: block;
     color: var(--color4);
     text-align: center;
