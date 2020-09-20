@@ -161,6 +161,33 @@ body {
     .sub-card span {
         display: none;
     }
+
+    .hamburger {
+        background-color: var(--color3);
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        transition: 0.4s;
+    }
+    
+    .hamburger:hover {
+        transition: 0.4s;
+        width: 200px;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .hamburger:hover .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none !important;
+    }
 }
 
 #loading {
@@ -212,19 +239,27 @@ body {
     text-decoration: none;
 }
 
-.hamburger {
-    background-color: var(--color3);
-    bottom: 25px;
-    right: 25px;
-    height: 50px;
-    width: 50px;
-    border-radius: 100px;
-    transition: 0.4s;
+.menu {
+    padding: 0 !important;
 }
 
-.hamburger:hover {
-    transition: 0.4s;
-    width: 150px;
-    height: 400px;
-    border-radius: 10px;
+.hamburger .menu {
+    display: none;
+}
+
+.hamburger .menu ul {
+    margin: auto;
+}
+
+.hamburger .menu li {
+    list-style: none;
+    left: 0;
+}
+
+.hamburger .menu a {
+    display: block;
+    color: var(--color4);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
