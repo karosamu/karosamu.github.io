@@ -182,7 +182,9 @@ body {
 
     .hamburger:hover .menu a {
         transition: 0.4s;
-        display: unset;
+        position: relative;
+        pointer-events: unset !important;
+        cursor: pointer !important;
         width: auto;
         font-size: 1em;
     }
@@ -264,7 +266,10 @@ body {
 }
 
 .hamburger .menu a {
-    display: none;
+    pointer-events: none !important;
+    cursor: default !important;
+    display: block;
+    position: fixed;
     color: var(--color4);
     text-align: center;
     padding: 14px 16px;
