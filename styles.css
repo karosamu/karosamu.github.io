@@ -173,19 +173,19 @@ body {
         transition: 0.4s;
     }
     
-    .hamburger:hover {
+    .hamburger:hover .hamburger:focus {
         transition: 0.4s;
         width: 200px;
         height: 220px;
         border-radius: 10px;
     }
 
-    .hamburger:hover .menu a {
+    .hamburger:focus .menu a {
         pointer-events: unset;
         cursor: pointer;
     }
 
-    .hamburger:hover .menu {
+    .hamburger:hover .hamburger:focus .menu {
         display: flex;
         flex-direction: column;
     }
