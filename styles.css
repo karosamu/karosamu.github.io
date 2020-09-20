@@ -214,7 +214,6 @@ body {
 
 .hamburger {
     background-color: var(--color3);
-    position: fixed;
     bottom: 25px;
     right: 25px;
     height: 50px;
