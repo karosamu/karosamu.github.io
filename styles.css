@@ -181,9 +181,8 @@ body {
     }
 
     .hamburger:hover .menu a {
-        transition-delay: 1s !important;
-        pointer-events: unset;
-        cursor: pointer;
+        pointer-events: unset !important;
+        cursor: pointer !important;
     }
 
     .hamburger:hover .menu {
