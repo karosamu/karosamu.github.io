@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karolis Samuolis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/3c317671c3.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="loading">
+        Loading...
+    </div>
+    <div id="theme" class="theme">
+        <div class="theme-div">
+            <button class="theme-button" onclick="toggleTheme()">Change theme</button>
+        </div>
+    </div>
+    <div id="nav" class="nav">
+        <ul id="navList">
+            <li class="link">
+                <a href="#home"><i class="fas fa-home"></i><br><span>Home</span></a>
+            </li>
+            <li class="link">
+                <a href="#work"><i class="fas fa-briefcase"></i><br><span>My Work</span></a>
+            </li>
+            <li class="link">
+                <a href="#contact"><i class="fas fa-address-book"><br><span>Contact</span></i></a>
+            </li>
+        </ul>
+    </div>
+    <div id="home" class="home main">
+        <div class="home-grid">
+            <div class="card">
+                <div class="card-header">
+                    Karolis Samuolis
+                </div>
+                <div class="card-container">
+                    Hi, I'm a front-end developer and a student at Kaunas University of Technology
+                </div>
+                <div class="card-action">
+                    <button>Contact me</button>
+                </div>
+            </div>
+            <div class="sub-cards">
+                <a href="mailto:karolissamuolis@gmail.com"
+                    class="sub-card sub-link">
+                    <i class="fas fa-envelope sub-link-i"></i>
+                    E-mail
+                </a>
+                <a href="https://www.linkedin.com/in/karolis-samuolis/"
+                    onclick="window.open(this.href,'_blank');return false;"
+                    class="sub-card sub-link">
+                    <i class="fab fa-linkedin sub-link-i"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/karosamu" onclick="window.open(this.href,'_blank');return false;"
+                    class="sub-card sub-link">
+                    <i class="fab fa-github sub-link-i"></i>
+                    Github
+                </a>
+                <a href="https://docs.google.com/document/d/1uSlvlo6_n2STnvM8K28VzROvr_5aHltQTWdAhlHWAFQ/export?format=pdf"
+                    class="sub-card sub-link">
+                    <i class="fas fa-file sub-link-i"></i>
+                    Resume
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="work" class="work main">
+        <div class="projects">
+            <div class="project-card">
+                <img class="project-image" src="https://i.postimg.cc/ZKpJpmJj/image.png" alt="image">
+                <div class="project-text">
+                    <div class="project-text-header">Teeemwork<span class="tag">WIP</span></div>
+                    <div class="project-text-info">
+                        <b>Teemwork</b> - a Trello clone.<br>
+                        Devloped using:
+                        <ul class="project-text-list">
+                            <li>> ReactJS</li>
+                            <li>> Redux</li>
+                            <li>> Persistant storage</li>
+                        </ul>
+                        More info in the Github repo.
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a class="live" target="_blank" href="https://teeemwork.web.app">Live</a>
+                    <a class="source" target="_blank" href="https://github.com/karosamu/teeemwork"> Source</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact main">
+        Contact me
+    </div>
+    </div>
+</body>
+
+</html>
