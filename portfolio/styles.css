@@ -1,6 +1,7 @@
 * {
 	font-family: "Roboto", sans-serif;
-	scrollbar-width: none;
+    scrollbar-width: none;
+    outline: none;
 }
 
 .theme-light {
