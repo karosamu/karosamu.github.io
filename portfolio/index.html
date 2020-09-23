@@ -1,110 +1,81 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karolis Samuolis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://use.fontawesome.com/3c317671c3.js"></script>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="theme" class="theme">
-        <div class="theme-div">
-            <button class="theme-button" onclick="toggleTheme()">Change theme</button>
+    
+    <div class="nav nav-animation">
+        <i class="fas fa-bars"></i>
+        <div class="list">
+            <ul class="animate">
+                <li>
+                    <button onclick="move('home')">Home</button>
+                </li>
+                <li>
+                    <button onclick="move('work')">My work</button>
+                </li>
+                <li>
+                    <button onclick="move('about')">About me</button>
+                </li>
+                <li>
+                    <button onclick="move('contact')">Contact me</button>
+                </li>
+            </ul>
         </div>
     </div>
-    <div id="nav" class="nav">
-        <ul id="navList">
-            <li class="link">
-                <a href="#home"><i class="fas fa-home"></i><br><span>Home</span></a>
-            </li>
-            <li class="link">
-                <a href="#work"><i class="fas fa-briefcase"></i><br><span>My Work</span></a>
-            </li>
-            <li class="link">
-                <a href="#contact"><i class="fas fa-address-book"><br><span>Contact</span></i></a>
-            </li>
-        </ul>
-    </div>
+    <button onclick="toggleTheme()" class="theme-switcher theme-switcher-animation">
+        <i class="fas fa-tint"></i>
+    </button>
     <div id="home" class="home main">
         <div class="home-grid">
-            <div class="title">Karolis<br>Samuolis</div>
-            <div class="card">
-                <div class="card-header">
-                    Laborum qui ad elit nulla.
-                </div>
-                <div class="card-container">
-                    Aliqua Lorem elit enim Lorem esse ipsum aliqua anim non velit voluptate sit. Laboris aliqua id
-                    aliquip excepteur nisi Lorem eu eiusmod laboris mollit et adipisicing duis commodo. Dolor eiusmod
-                    enim mollit in enim elit culpa labore.
-                </div>
-                <div class="card-action">
-                    <button>Contact me</button>
-                </div>
+            <div class="main-text main-text-size">
+                Hi, my name is
+                <div class="title">Karolis Samuolis</div>
+                and I'm a front-end developer.
             </div>
             <div class="sub-cards">
                 <a href="mailto:karolissamuolis@gmail.com" class="sub-card sub-link sub-card-grid">
                     <i class="fas fa-envelope sub-link-i"></i>
-                    <div>
-                        <div class="sub-card-info">
-                            E-mail
-                        </div>
-                        <div class="sub-card-info secondary-info">
-                            samuoliskar<br class="breaker">@gmail.com
-                        </div>
-                    </div>
                 </a>
                 <a href="https://www.linkedin.com/in/karolis-samuolis/"
                     onclick="window.open(this.href,'_blank');return false;" class="sub-card sub-link sub-card-grid">
                     <i class="fab fa-linkedin sub-link-i"></i>
-                    <div>
-                        <div class="sub-card-info">
-                            LinkedIn
-                        </div>
-                        <div class="sub-card-info secondary-info">
-                            karolis-samuolis
-                        </div>
-                    </div>
                 </a>
                 <a href="https://github.com/karosamu" onclick="window.open(this.href,'_blank');return false;"
                     class="sub-card sub-link">
                     <i class="fab fa-github sub-link-i"></i>
-                    <div>
-                        <div class="sub-card-info">
-                            GitHub
-                        </div>
-                        <div class="sub-card-info secondary-info">
-                            karosamu
-                        </div>
-                    </div>
                 </a>
                 <a href="https://docs.google.com/document/d/1uSlvlo6_n2STnvM8K28VzROvr_5aHltQTWdAhlHWAFQ/export?format=pdf"
                     class="sub-card sub-link">
                     <i class="fas fa-file sub-link-i"></i>
-                    <div>
-                        <div class="sub-card-info">
-                            Resume
-                        </div>
-                        <div class="sub-card-info secondary-info">
-                            PDF
-                        </div>
-                    </div>
                 </a>
             </div>
+            <button onclick="move('work')" class="card-action-button">See my work</button>
         </div>
     </div>
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor">
+        <path class="svg" d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
+    </svg>
     <div id="work" class="work main">
         <div class="projects">
             <div class="project-card">
-                <img class="project-image" src="https://i.postimg.cc/ZKpJpmJj/image.png" alt="image">
+                <img class="project-image" src="https://i.postimg.cc/ZKpJpmJj/image.png" alt="image" />
                 <div class="project-text">
-                    <div class="project-text-header">Teeemwork<span class="tag">WIP</span></div>
+                    <div class="project-text-header">
+                        Teeemwork<span class="tag">WIP</span>
+                    </div>
                     <div class="project-text-info">
-                        <b>Teemwork</b> - a Trello clone.<br>
+                        <b>Teemwork</b> - a Trello clone.<br />
                         Devloped using:
                         <ul class="project-text-list">
                             <li>> ReactJS</li>
@@ -116,15 +87,27 @@
                 </div>
                 <div class="project-links">
                     <a class="project-button" target="_blank" href="https://teeemwork.web.app">Live</a>
-                    <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork"> Source</a>
+                    <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork">
+                        Source</a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="contact" class="contact main">
-        Contact me
-    </div>
-    </div>
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor2">
+        <path class="svg2" d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
+    </svg>
+    <div id="about" class="about main">About me</div>
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor">
+        <path class="svg" d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
+    </svg>
+    <div id="contact" class="contact main">Contact me</div>
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor2">
+        <path class="svg2" d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
+    </svg>
+    <div class="footer"></div>
 </body>
 
 </html>

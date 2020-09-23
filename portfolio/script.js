@@ -44,33 +44,23 @@ function toggleTheme() {
     }
 })();
 
-var currentPage=1;
-loadCurrentPage();
-
-$("#home, #work, #contact").click(function(){
-    currentPage= ($(this).attr('id')=='next') ? currentPage + 1 : currentPage - 1;
-
-    if (currentPage==0) 
-        currentPage=1;
-    else if (currentPage==101) 
-        currentPage=100;
-    else
-        loadCurrentPage();
-});
-
-function loadCurrentPage(){
+function loadCurrentPage() {
     //$('input').attr('disabled','disabled');
     $('#displayResults').html('<img src="http://blog-well.com/wp-content/uploads/2007/06/indicator-big-2.gif" />');
 
     $.ajax({
         url: '/echo/html/',
-        data: 'html=Current Page: ' + currentPage+'&delay=1',
+        data: 'html=Current Page: ' + currentPage + '&delay=1',
         type: 'POST',
         success: function (data) {
-           // $('input').attr('disabled','');
+            // $('input').attr('disabled','');
             $('#displayResults').html(data);
         }
     });
 
     $('#home').page();
+}
+
+function move(target) {
+    document.getElementById(target).scrollIntoView();
 }
