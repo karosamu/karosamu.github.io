@@ -62,7 +62,7 @@ html {
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: var(--init);
+	background-color: var(--color1);
 }
 
 .main {
