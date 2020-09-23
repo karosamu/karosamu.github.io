@@ -179,6 +179,23 @@ body {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
+
+	.main-text-size {
+		font-size: 6vw !important;
+	}
+
+	.title {
+		font-size: 8vw !important;
+	}
+
+	.action-button {
+		font-size: 4vw !important;
+		height: 6vw !important;
+	}
+
+	.sub-link-i {
+		font-size: 5vw !important;
+	}
 }
 
 .container {
