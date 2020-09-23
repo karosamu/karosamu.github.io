@@ -186,8 +186,8 @@ body {
 	}
 
 	.sub-cards {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr !important;
+		grid-template-columns: 1fr 1fr !important;
+		grid-template-rows: 1fr 1fr !important;
 		grid-column-gap: 0;
 	}
 
