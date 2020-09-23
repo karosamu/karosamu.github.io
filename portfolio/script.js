@@ -21,7 +21,7 @@ window.smoothScroll = function (target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-window.onload = function () { document.getElementById("loading").style.cssText = "transition: 1s; display: none;" }
+//window.onload = function () { document.getElementById("loading").style.cssText = "transition: 1s; display: none;" }
 
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
@@ -29,18 +29,18 @@ function setTheme(themeName) {
 }
 
 function toggleTheme() {
-    if (localStorage.getItem('theme') === 'theme-light') {
-        setTheme('theme-dark');
+    if (localStorage.getItem('theme') === 'theme-light2') {
+        setTheme('theme-dark2');
     } else {
-        setTheme('theme-light');
+        setTheme('theme-light2');
     }
 }
 
 (function () {
-    if (localStorage.getItem('theme') === 'theme-light') {
-        setTheme('theme-light');
+    if (localStorage.getItem('theme') === 'theme-light2') {
+        setTheme('theme-light2');
     } else {
-        setTheme('theme-dark');
+        setTheme('theme-dark2');
     }
 })();
 
