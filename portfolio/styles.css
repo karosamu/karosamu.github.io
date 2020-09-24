@@ -292,6 +292,12 @@ body {
 		height: 8vw !important;
 		padding: 0.6vw !important;
 	}
+
+	.nav:hover {
+		border-bottom-right-radius: 5px;
+		width: 135px !important;
+		height: 185px !important;
+	}
 }
 
 .container {
