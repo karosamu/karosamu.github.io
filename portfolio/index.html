@@ -7,33 +7,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://use.fontawesome.com/3c317671c3.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-    
+
     <div class="nav nav-animation">
         <i class="fas fa-bars"></i>
         <div class="list">
             <ul class="animate">
                 <li>
-                    <button onclick="move('home')">Home</button>
+                    <button class="nav-button" onclick="move('home')">Home</button>
                 </li>
                 <li>
-                    <button onclick="move('work')">My work</button>
+                    <button class="nav-button" onclick="move('work')">My work</button>
                 </li>
                 <li>
-                    <button onclick="move('about')">About me</button>
+                    <button class="nav-button" onclick="move('about')">About me</button>
                 </li>
                 <li>
-                    <button onclick="move('contact')">Contact me</button>
+                    <button class="nav-button" onclick="move('contact')">Contact me</button>
                 </li>
             </ul>
         </div>
     </div>
     <button onclick="toggleTheme()" class="theme-switcher theme-switcher-animation">
-        <i class="fas fa-tint"></i>
+        <span class="material-icons sun theme-button">
+            brightness_5
+        </span>
+        <span class="material-icons moon theme-button">
+            brightness_3
+        </span>
     </button>
     <div id="home" class="home main">
         <div class="home-grid">

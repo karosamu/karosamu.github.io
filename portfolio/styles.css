@@ -12,6 +12,8 @@
 	--color5: #9a8c98;
 	--init: #000000;
 	--dock: #f2e9e488;
+	--moon: none;
+	--sun: inline-block;
 }
 
 .theme-light2 {
@@ -22,6 +24,8 @@
 	--color5: #9a8c98;
 	--init: #ffffff;
 	--dock: #22223b88;
+	--moon: inline-block;
+	--sun: none;
 }
 
 .svg {
@@ -111,20 +115,20 @@ body {
 }
 
 .action-button {
-	margin: auto;
+	margin-top: 7vw;
 	background: #00000000;
 	height: 50px;
 	color: var(--color4);
 	border: none;
-	border-radius: 0.5vw;
+	border-radius: 1vw;
 	border: 0.2vw solid var(--color4);
 	cursor: pointer;
 	font-size: 2vw;
 	height: 4vw;
-	padding: 0.2vw;
+	padding: 0.8vw;
 }
 
-.card-action-button:hover {
+.action-button:hover {
 	background: var(--color5);
 	transition: 0.1s;
 }
@@ -155,6 +159,94 @@ body {
 
 .sub-card .secondary-info {
 	color: var(--color4);
+}
+
+.sun {
+	display: var(--sun) !important;
+	font-family: 'Material Icons' !important;
+}
+
+.moon {
+	display: var(--moon) !important;
+	font-family: 'Material Icons' !important;
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2999px) {
+	.theme-switcher-animation {
+		width: 100px !important;
+		height: 100px !important;
+		border-bottom-left-radius: 200px !important;
+	}
+
+	.theme-button {
+		font-size: 48px !important;
+	}
+
+	.nav-animation {
+		width: 100px !important;
+		height: 100px !important;
+		border-bottom-right-radius: 200px !important;
+	}
+
+	.nav i {
+		padding:  10px 20px 20px 10px;
+		font-size: 48px;
+	}
+
+	.nav:hover {
+		border-bottom-right-radius: 10px !important;
+		width: 200px !important;
+		height: 300px !important;
+	}
+
+	.nav-button {
+		font-size: 30px !important;
+	}
+}
+
+@media only screen and (min-width: 3000px) {
+	.theme-switcher-animation {
+		width: 150px !important;
+		height: 150px !important;
+		border-bottom-left-radius: 200px !important;
+	}
+
+	.theme-button {
+		font-size: 80px !important;
+	}
+
+	.nav-animation {
+		width: 150px !important;
+		height: 150px !important;
+		border-bottom-right-radius: 200px !important;
+	}
+
+	.nav i {
+		padding:  10px 20px 20px 10px;
+		font-size: 80px;
+	}
+
+	.nav:hover {
+		border-bottom-right-radius: 20px !important;
+		width: 300px !important;
+		height: 440px !important;
+	}
+
+	.nav-button {
+		font-size: 48px !important;
+	}
+}
+
+.nav ul {
+	margin: 0 !important;
+}
+
+@media only screen and (min-width: 550px)and (max-width: 1999px) {
+	.nav:hover {
+		border-bottom-right-radius: 5px;
+		width: 135px !important;
+		height: 185px !important;
+	}
 }
 
 @media only screen and (max-width: 550px) {
@@ -195,6 +287,11 @@ body {
 
 	.sub-link-i {
 		font-size: 5vw !important;
+	}
+
+	.action-button {
+		height: 8vw !important;
+		padding: 0.6vw !important;
 	}
 }
 
@@ -287,8 +384,7 @@ body {
 	cursor: pointer;
 	background-color: #00000000;
 	border: none !important;
-	margin: auto;
-	padding: auto;
+	margin: 3px 3px 15px 15px;
 }
 
 .title {
@@ -326,14 +422,8 @@ body {
 	top: 0 !important;
 	right: 0 !important;
 	background-color: var(--color4);
-	width: 50px !important;
-	height: 50px !important;
-}
-
-.theme-switcher i {
-	transition: 1s;
-	color: var(--color1);
-	margin: 0 0 15px 15px;
+	width: 50px;
+	height: 50px;
 }
 
 .nav {
@@ -353,8 +443,8 @@ body {
 	top: 0 !important;
 	left: 0 !important;
 	background-color: var(--color4);
-	width: 50px !important;
-	height: 50px !important;
+	width: 50px;
+	height: 50px;
 }
 
 .list {
@@ -366,12 +456,6 @@ body {
 	transition: 1s;
 	color: var(--color1);
 	margin: 8px 15px 15px 8px;
-}
-
-.nav:hover {
-	border-radius: 5px;
-	width: 200px !important;
-	height: 200px !important;
 }
 
 .nav:hover .list {
