@@ -10,8 +10,6 @@
 	--color3: #c9ada7;
 	--color4: #f2e9e4;
 	--color5: #9a8c98;
-	--init: #000000;
-	--dock: #f2e9e488;
 	--moon: none;
 	--sun: inline-block;
 }
@@ -22,32 +20,30 @@
 	--color3: #4a4e69;
 	--color4: #22223b;
 	--color5: #9a8c98;
-	--init: #ffffff;
-	--dock: #22223b88;
 	--moon: inline-block;
 	--sun: none;
 }
 
 .svg {
 	transition: 0.5s;
-	fill: var(--color1);
-	stroke: var(--color1);
 }
 
-.svgcolor {
-	transition: 0.5s;
-	background-color: var(--color2);
-}
-
-.svg2 {
-	transition: 0.5s;
+.svg2 path {
 	fill: var(--color2);
 	stroke: var(--color2);
 }
 
-.svgcolor2 {
-	transition: 0.5s;
+.svg2 {
 	background-color: var(--color1);
+}
+
+.svg1 path {
+	fill: var(--color1);
+	stroke: var(--color1);
+}
+
+.svg1 {
+	background-color: var(--color2);
 }
 
 * i {
@@ -57,6 +53,7 @@
 
 html {
 	scroll-behavior: smooth;
+	background-color: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -115,7 +112,8 @@ body {
 }
 
 .action-button {
-	margin-top: 7vw;
+	transition: 0.5s;
+	margin-top: 4vw;
 	background: #00000000;
 	height: 50px;
 	color: var(--color4);
@@ -141,6 +139,7 @@ body {
 }
 
 .sub-card {
+	transition: 0.5s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -554,4 +553,22 @@ body {
 .action {
 	display: flex;
 	justify-content: center;
+}
+
+.arrow-down {
+	transition: 0.5s;
+	font-size: 3vw;
+	color: var(--color4)
+}
+
+.arrow-container {
+	margin-top: 6vw;
+	display: flex;
+	justify-content: center;
+}
+
+.arrow-button {
+	background-color: #00000000;
+	border: none;
+	cursor: pointer;
 }
