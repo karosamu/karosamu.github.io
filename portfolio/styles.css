@@ -432,6 +432,7 @@ body {
 }
 
 .nav {
+	z-index: 1;
 	position: fixed;
 	width: 0px;
 	height: 0px;
@@ -518,7 +519,6 @@ body {
 .reveal::after {
 	content: "";
 	position: absolute;
-	z-index: 999;
 	top: 0;
 	left: 0;
 	right: 0;
