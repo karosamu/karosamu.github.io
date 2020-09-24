@@ -29,24 +29,24 @@
 }
 
 .svg {
-	transition: 1s;
+	transition: 0.5s;
 	fill: var(--color1);
 	stroke: var(--color1);
 }
 
 .svgcolor {
-	transition: 1s;
+	transition: 0.5s;
 	background-color: var(--color2);
 }
 
 .svg2 {
-	transition: 1s;
+	transition: 0.5s;
 	fill: var(--color2);
 	stroke: var(--color2);
 }
 
 .svgcolor2 {
-	transition: 1s;
+	transition: 0.5s;
 	background-color: var(--color1);
 }
 
@@ -76,7 +76,7 @@ body {
 
 .home {
 	background-color: var(--color1);
-	transition: 1s;
+	transition: 0.5s;
 }
 
 .home {
@@ -94,23 +94,23 @@ body {
 }
 
 .about {
-	transition: 1s;
+	transition: 0.5s;
 	background-color: var(--color1);
 }
 
 .footer {
-	transition: 1s;
+	transition: 0.5s;
 	background-color: var(--color1);
 	height: 50vh;
 }
 
 .work {
-	transition: 1s;
+	transition: 0.5s;
 	background-color: var(--color2);
 }
 
 .contact {
-	transition: 1s;
+	transition: 0.5s;
 	background-color: var(--color2);
 }
 
@@ -163,12 +163,12 @@ body {
 
 .sun {
 	display: var(--sun) !important;
-	font-family: 'Material Icons' !important;
+	font-family: "Material Icons" !important;
 }
 
 .moon {
 	display: var(--moon) !important;
-	font-family: 'Material Icons' !important;
+	font-family: "Material Icons" !important;
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 2999px) {
@@ -189,7 +189,7 @@ body {
 	}
 
 	.nav i {
-		padding:  10px 20px 20px 10px;
+		padding: 10px 20px 20px 10px;
 		font-size: 48px;
 	}
 
@@ -222,7 +222,7 @@ body {
 	}
 
 	.nav i {
-		padding:  10px 20px 20px 10px;
+		padding: 10px 20px 20px 10px;
 		font-size: 80px;
 	}
 
@@ -241,7 +241,7 @@ body {
 	margin: 0 !important;
 }
 
-@media only screen and (min-width: 550px)and (max-width: 1999px) {
+@media only screen and (min-width: 550px) and (max-width: 1999px) {
 	.nav:hover {
 		border-bottom-right-radius: 5px;
 		width: 135px !important;
@@ -388,7 +388,7 @@ body {
 }
 
 .title {
-	transition: 1s;
+	transition: 0.5s;
 	font-size: 6vw;
 	color: var(--color3);
 	font-weight: bold;
@@ -399,7 +399,7 @@ body {
 }
 
 .main-text {
-	transition: 1s;
+	transition: 0.5s;
 	color: var(--color4);
 }
 
@@ -418,7 +418,7 @@ body {
 }
 
 .theme-switcher-animation {
-	transition: 1s;
+	transition: 0.5s;
 	top: 0 !important;
 	right: 0 !important;
 	background-color: var(--color4);
@@ -453,19 +453,19 @@ body {
 }
 
 .nav i {
-	transition: 1s;
+	transition: 0.5s;
 	color: var(--color1);
 	margin: 8px 15px 15px 8px;
 }
 
 .nav:hover .list {
-	transition: 1s;
+	transition: 0.5s;
 	display: unset;
 	opacity: 100%;
 }
 
 .nav:hover .list button {
-	transition: 1s;
+	transition: 0.5s;
 	display: unset;
 	opacity: 100%;
 }
@@ -479,7 +479,7 @@ body {
 	background-color: #00000000;
 	border: none;
 	cursor: pointer;
-	white-space:nowrap;
+	white-space: nowrap;
 	font-size: 20px;
 	padding: 5px;
 }
@@ -488,4 +488,70 @@ body {
 	list-style-type: none;
 	padding: 0;
 	overflow: hidden;
+}
+
+.reveal,
+.reveal::after {
+	animation-delay: 0;
+	animation-delay: var(--animation-delay, 1s);
+	animation-iteration-count: 1;
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: 800ms;
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal {
+	position: relative;
+	animation-name: text;
+	white-space: nowrap;
+	cursor: default;
+	text-transform: uppercase;
+}
+
+.reveal::after {
+	content: "";
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color4);
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	pointer-events: none;
+	animation-name: revealer;
+}
+
+@keyframes text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes revealer {
+	0%,
+	50% {
+		transform-origin: 0 50%;
+	}
+	60%,
+	100% {
+		transform-origin: 100% 50%;
+	}
+	60% {
+		transform: scaleX(1);
+	}
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.action {
+	display: flex;
+	justify-content: center;
 }
