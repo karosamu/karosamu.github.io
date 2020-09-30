@@ -16,15 +16,15 @@
     <div class="nav nav-animation">
         <i class="fas fa-bars"></i>
         <div class="list">
-            <ul class="animate">
+            <ul class="animate reveal-nav">
                 <li>
                     <button class="nav-button" onclick="move('home')">Home</button>
                 </li>
                 <li>
-                    <button class="nav-button" onclick="move('work')">My work</button>
+                    <button class="nav-button" onclick="move('about')">About me</button>
                 </li>
                 <li>
-                    <button class="nav-button" onclick="move('about')">About me</button>
+                    <button class="nav-button" onclick="move('work')">My work</button>
                 </li>
                 <li>
                     <button class="nav-button" onclick="move('contact')">Contact me</button>
@@ -42,6 +42,9 @@
     </button>
     <div id="home" class="home main">
         <div class="home-grid">
+            <div class="note">
+                Note: This website is currently work in progress.
+            </div>
             <div class="main-text main-text-size">
                 Hi, my name is
                 <div class="title reveal">Karolis Samuolis</div>
@@ -68,13 +71,20 @@
                 <button onclick="move('work')" class="action-button">See my work</button>
             </div>
             <div class="arrow-container">
-                <button onclick="move('work')" class="arrow-button">
+                <button onclick="move('about')" class="arrow-button">
                     <i class="fas fa-chevron-down arrow-down"></i>
                 </button>
             </div>
         </div>
     </div>
-    <div class="svg svg1">
+    <div class="svg1">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" >
+            <path d="M0 0 L50 100 L100 0 Z"></path>
+        </svg>
+    </div>
+    <div id="about" class="about main">About me</div>
+    <div class="svg2">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
             xmlns="http://www.w3.org/2000/svg" >
             <path d="M0 0 L50 100 L100 0 Z"></path>
@@ -83,48 +93,72 @@
     <div id="work" class="work main">
         <div class="projects">
             <div class="project-card">
-                <img class="project-image" src="https://i.postimg.cc/ZKpJpmJj/image.png" alt="image" />
-                <div class="project-text">
-                    <div class="project-text-header">
-                        Teeemwork<span class="tag">WIP</span>
+                <div class="project-image-container">
+                    <img class="project-image" src="https://i.postimg.cc/G2hVb2Yr/image.png" alt="Project Image"/>
+                </div>
+                <div class="project-content">
+                    <div class="project-text">
+                        <div class="project-text-header">
+                            Teeemwork<span class="tag">WIP</span>
+                        </div>
+                        <div class="project-text-info">
+                            <b>Teemwork</b> - a Trello clone.<br />
+                            Developed using:
+                            <ul class="project-text-list">
+                                <li>ReactJS</li>
+                                <li>Redux</li>
+                                <li>Persistant storage</li>
+                            </ul>
+                            More info in the Github repo.
+                        </div>
                     </div>
-                    <div class="project-text-info">
-                        <b>Teemwork</b> - a Trello clone.<br />
-                        Developed using:
-                        <ul class="project-text-list">
-                            <li>> ReactJS</li>
-                            <li>> Redux</li>
-                            <li>> Persistant storage</li>
-                        </ul>
-                        More info in the Github repo.
+                    <div class="project-links">
+                        <a class="project-button" target="_blank" href="https://teeemwork.web.app">Live</a>
+                        <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork">
+                            Source</a>
                     </div>
                 </div>
-                <div class="project-links">
-                    <a class="project-button" target="_blank" href="https://teeemwork.web.app">Live</a>
-                    <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork">
-                        Source</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img class="project-image" src="https://i.postimg.cc/G2hVb2Yr/image.png" alt="Project Image"/>
+                </div>
+                <div class="project-content">
+                    <div class="project-text">
+                        <div class="project-text-header">
+                            Teeemwork<span class="tag">WIP</span>
+                        </div>
+                        <div class="project-text-info">
+                            <b>Teemwork</b> - a Trello clone.<br />
+                            Developed using:
+                            <ul class="project-text-list">
+                                <li>ReactJS</li>
+                                <li>Redux</li>
+                                <li>Persistant storage</li>
+                            </ul>
+                            More info in the Github repo.
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-button" target="_blank" href="https://teeemwork.web.app">Live</a>
+                        <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork">
+                            Source</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="svg svg2">
+    <div class="svg1">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
             xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
-        </svg>
-    </div>
-    <div id="about" class="about main">About me</div>
-    <div class="svg svg1">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
+            <path d="M0 0 L50 100 L100 0 Z"></path>
         </svg>
     </div>
     <div id="contact" class="contact main">Contact me</div>
-    <div class="svg svg2">
+    <div class="svg2">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
             xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z" fill="#22223b" stroke="#22223b"></path>
+            <path d="M0 0 L50 100 L100 0 Z"></path>
         </svg>
     </div>
     <div class="footer"></div>
