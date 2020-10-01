@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://use.fontawesome.com/3c317671c3.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -83,7 +83,11 @@
             <path d="M0 0 L50 100 L100 0 Z"></path>
         </svg>
     </div>
-    <div id="about" class="about main">About me</div>
+    <div id="about" class="about main">
+        <div class="section-title">
+            About me
+        </div>
+    </div>
     <div class="svg2">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
             xmlns="http://www.w3.org/2000/svg" >
@@ -91,10 +95,13 @@
         </svg>
     </div>
     <div id="work" class="work main">
+        <div class="section-title">
+            My work
+        </div>
         <div class="projects">
             <div class="project-card">
                 <div class="project-image-container">
-                    <img class="project-image" src="https://i.postimg.cc/G2hVb2Yr/image.png" alt="Project Image"/>
+                    <img class="project-image" src="https://i.postimg.cc/FRb0Dq41/image.png" alt="Project Image"/>
                 </div>
                 <div class="project-content">
                     <div class="project-text">
@@ -109,7 +116,9 @@
                                 <li>Redux</li>
                                 <li>Persistant storage</li>
                             </ul>
-                            More info in the Github repo.
+                            <div class="more-info">
+                                More info in the Github repository.
+                            </div>
                         </div>
                     </div>
                     <div class="project-links">
@@ -121,27 +130,53 @@
             </div>
             <div class="project-card">
                 <div class="project-image-container">
-                    <img class="project-image" src="https://i.postimg.cc/G2hVb2Yr/image.png" alt="Project Image"/>
+                    <img class="project-image" src="https://i.postimg.cc/KYNj1yrG/image.png" alt="Project Image"/>
                 </div>
                 <div class="project-content">
                     <div class="project-text">
                         <div class="project-text-header">
-                            Teeemwork<span class="tag">WIP</span>
+                            Todo List<span class="tag">Unfinished</span>
                         </div>
                         <div class="project-text-info">
-                            <b>Teemwork</b> - a Trello clone.<br />
-                            Developed using:
-                            <ul class="project-text-list">
-                                <li>ReactJS</li>
-                                <li>Redux</li>
-                                <li>Persistant storage</li>
-                            </ul>
-                            More info in the Github repo.
+                            Developed using: React<br>
+                            A quick project to see how React works.<br>
+                            <div class="more-info">
+                                More info in the Github repository.
+                            </div>
                         </div>
                     </div>
                     <div class="project-links">
-                        <a class="project-button" target="_blank" href="https://teeemwork.web.app">Live</a>
-                        <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork">
+                        <a class="project-button" target="_blank" href="https://reacttodoks.web.app/">Live</a>
+                        <a class="project-button" target="_blank" href="https://github.com/karosamu/react-todo">
+                            Source</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img class="project-image" src="https://i.postimg.cc/L8Z2dF0C/image.png" alt="Project Image"/>
+                </div>
+                <div class="project-content">
+                    <div class="project-text">
+                        <div class="project-text-header">
+                            Sensor management app<span class="tag">Discontinued</span>
+                        </div>
+                        <div class="project-text-info">
+                            A project to track sensors inside a factory.<br>
+                            Developed using:
+                            <ul>
+                                <li>Angular 8</li>
+                                <li>.NET</li>
+                                <li>Firebase</li>
+                            </ul>
+                            <div class="more-info">
+                                More info in the Github repository.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-button" target="_blank" href="https://sensormanagementproject.web.app/">Live</a>
+                        <a class="project-button" target="_blank" href="https://github.com/karosamu/SensorWeb">
                             Source</a>
                     </div>
                 </div>
@@ -154,14 +189,34 @@
             <path d="M0 0 L50 100 L100 0 Z"></path>
         </svg>
     </div>
-    <div id="contact" class="contact main">Contact me</div>
+    <div id="contact" class="contact main">
+        <div class="section-title">
+            Contact me
+        </div>
+        <form action="https://formspree.io/f/mbjplqle" method="POST" class="contact-form">
+            <label>
+                Your email:
+                <input type="text" name="_replyto" class="e-mail">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" class="message"></textarea>
+            </label>
+            <div class="status">
+
+            </div>
+            <button type="submit" value="Send" class="submit">Send</button>
+        </form>
+    </div>
     <div class="svg2">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
             xmlns="http://www.w3.org/2000/svg" >
             <path d="M0 0 L50 100 L100 0 Z"></path>
         </svg>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="footer-text">Karolis Samuolis, 2020</div>
+    </div>
 </body>
 
 </html>

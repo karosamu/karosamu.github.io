@@ -64,3 +64,31 @@ function loadCurrentPage() {
 function move(target) {
     document.getElementById(target).scrollIntoView();
 }
+
+$(document).ready(function () {
+    $('.submit').click(function (event) {
+        event.preventDefault();
+        var email = $('.e-mail').val();
+        var name = $('.name').val();
+        var message = $('.message').val();
+        var statusElm = $('.status');
+        statusElm.empty();
+
+        if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+            event.preventDefault();
+            statusElm.append('<div class="error">E-mail is invalid</div>');
+        }
+        if (email === ""){
+            event.preventDefault();
+            statusElm.append('<div class="error">E-mail field is empty</div>');
+        }
+        if (name === "") {
+            event.preventDefault();
+            statusElm.append('<div class="error">Name field is empty</div>');
+        }
+        if (message === ""){
+            event.preventDefault();
+            statusElm.append('<div class="error">Message field is empty</div>');
+        }
+    });
+});
