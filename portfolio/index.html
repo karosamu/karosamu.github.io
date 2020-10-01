@@ -70,17 +70,17 @@
             <div class="action">
                 <button onclick="move('work')" class="action-button">See my work</button>
             </div>
-            <div class="arrow-container">
-                <button onclick="move('about')" class="arrow-button">
+            <div class="arrow-container wrap">
+                <button onclick="move('about')" class="arrow-button animated bounce">
                     <i class="fas fa-chevron-down arrow-down"></i>
                 </button>
             </div>
         </div>
     </div>
     <div class="svg1">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z"></path>
+        <svg viewbox="0 0 800 125" class="svg">
+            <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
+            </path>
         </svg>
     </div>
     <div id="about" class="about main">
@@ -89,9 +89,9 @@
         </div>
     </div>
     <div class="svg2">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z"></path>
+        <svg viewbox="0 0 800 125" class="svg">
+            <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
+            </path>
         </svg>
     </div>
     <div id="work" class="work main">
@@ -101,15 +101,16 @@
         <div class="projects">
             <div class="project-card">
                 <div class="project-image-container">
-                    <img class="project-image" src="https://i.postimg.cc/FRb0Dq41/image.png" alt="Project Image"/>
+                    <img class="project-image" src="https://i.postimg.cc/FRb0Dq41/image.png" alt="Project Image" />
                 </div>
                 <div class="project-content">
                     <div class="project-text">
                         <div class="project-text-header">
-                            Teeemwork<span class="tag">WIP</span>
+                            <span class="project-title h1-fluid">Teeemwork</span>
+                            <span class="tag">WIP</span>
                         </div>
-                        <div class="project-text-info">
-                            <b>Teemwork</b> - a Trello clone.<br />
+                        <div class="project-text-info h3-fluid">
+                            <b>Teeemwork</b> - a Trello clone.<br />
                             Developed using:
                             <ul class="project-text-list">
                                 <li>ReactJS</li>
@@ -122,22 +123,22 @@
                         </div>
                     </div>
                     <div class="project-links">
-                        <a class="project-button" target="_blank" href="https://teeemwork.web.app">Live</a>
-                        <a class="project-button" target="_blank" href="https://github.com/karosamu/teeemwork">
-                            Source</a>
+                        <a class="project-button h3-fluid" target="_blank" href="https://teeemwork.web.app">Live</a>
+                        <a class="project-button h3-fluid" target="_blank" href="https://github.com/karosamu/teeemwork">Source</a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image-container">
-                    <img class="project-image" src="https://i.postimg.cc/KYNj1yrG/image.png" alt="Project Image"/>
+                    <img class="project-image" src="https://i.postimg.cc/KYNj1yrG/image.png" alt="Project Image" />
                 </div>
                 <div class="project-content">
                     <div class="project-text">
                         <div class="project-text-header">
-                            Todo List<span class="tag">Unfinished</span>
+                            <span class="project-title h1-fluid">Todo List</span>
+                            <span class="tag">Unfinished</span>
                         </div>
-                        <div class="project-text-info">
+                        <div class="project-text-info h3-fluid">
                             Developed using: React<br>
                             A quick project to see how React works.<br>
                             <div class="more-info">
@@ -146,23 +147,25 @@
                         </div>
                     </div>
                     <div class="project-links">
-                        <a class="project-button" target="_blank" href="https://reacttodoks.web.app/">Live</a>
-                        <a class="project-button" target="_blank" href="https://github.com/karosamu/react-todo">
+                        <a class="project-button h3-fluid" target="_blank" href="https://reacttodoks.web.app/">Live</a>
+                        <a class="project-button h3-fluid" target="_blank" href="https://github.com/karosamu/react-todo">
                             Source</a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image-container">
-                    <img class="project-image" src="https://i.postimg.cc/L8Z2dF0C/image.png" alt="Project Image"/>
+                    <img class="project-image" src="https://i.postimg.cc/L8Z2dF0C/image.png" alt="Project Image" />
                 </div>
                 <div class="project-content">
                     <div class="project-text">
                         <div class="project-text-header">
-                            Sensor management app<span class="tag">Discontinued</span>
+                            <span class="project-title h1-fluid">Sensor management app</span>
+                            <span class="tag">Discontinued</span>
                         </div>
-                        <div class="project-text-info">
+                        <div class="project-text-info h3-fluid">
                             A project to track sensors inside a factory.<br>
+                            It was created for a semester project.<br>
                             Developed using:
                             <ul>
                                 <li>Angular 8</li>
@@ -175,8 +178,9 @@
                         </div>
                     </div>
                     <div class="project-links">
-                        <a class="project-button" target="_blank" href="https://sensormanagementproject.web.app/">Live</a>
-                        <a class="project-button" target="_blank" href="https://github.com/karosamu/SensorWeb">
+                        <a class="project-button h3-fluid" target="_blank"
+                            href="https://sensormanagementproject.web.app/">Live</a>
+                        <a class="project-button h3-fluid" target="_blank" href="https://github.com/karosamu/SensorWeb">
                             Source</a>
                     </div>
                 </div>
@@ -184,38 +188,40 @@
         </div>
     </div>
     <div class="svg1">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z"></path>
+        <svg viewbox="0 0 800 125" class="svg">
+            <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
+            </path>
         </svg>
     </div>
     <div id="contact" class="contact main">
         <div class="section-title">
             Contact me
         </div>
-        <form action="https://formspree.io/f/mbjplqle"
-        method="POST" class="contact-form" id="contact-form">
-            <label>
-                Your name:
-                <input type="text" name="Name" class="name">
-            </label>
-            <label>
-                Your email:
-                <input type="text" name="Email address" class="e-mail">
-            </label>
-            <label>
-                Your message:
-                <textarea name="Message" class="message"></textarea>
-            </label>
-            <div class="status" id="status">
-            </div>
-            <button type="submit" value="Send" id="submit" class="submit">Send</button>
-        </form>
+        <div class="contact-section">
+            <form action="https://formspree.io/f/mbjplqle" method="POST" class="contact-form" id="contact-form">
+                <label class="name-container">
+                    <span>Your name:</span>
+                    <input onfocus="removecss('name')" type="text" name="Name" id="name" class="name form-colors">
+                </label>
+                <label class="email-container">
+                    <span>Your email:</span>
+                    <input onfocus="removecss('e-mail')" type="text" name="Email address" id="e-mail" class="e-mail form-colors">
+                </label>
+                <label class="message-container">
+                    <span>Your message:</span>
+                    <textarea spellcheck="false" onfocus="removecss('message')" name="Message" id="message" class="message form-colors"></textarea>
+                </label>
+                <button type="submit" value="Send" id="submit" class="submit">Send</button>
+            </form>
+            <span>Or</span>
+            <span><i class="fas fa-envelope sub-link-i"></i>Email me: karolissamuolis@gmail.com</span>
+            <span><i class="fab fa-linkedin sub-link-i"></i>Message me on LinkedIn: karolis-samuolis</span>
+        </div>
     </div>
     <div class="svg2">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" >
-            <path d="M0 0 L50 100 L100 0 Z"></path>
+        <svg viewbox="0 0 800 125" class="svg">
+            <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
+            </path>
         </svg>
     </div>
     <div class="footer">

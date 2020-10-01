@@ -65,6 +65,10 @@ function move(target) {
     document.getElementById(target).scrollIntoView();
 }
 
+function removecss(id) {
+    document.getElementById(id).classList.remove('failed');
+}
+
 $(document).ready(function () {
     $('.submit').click(function (event) {
         var email = $('.e-mail').val();
@@ -75,19 +79,19 @@ $(document).ready(function () {
 
         if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
             event.preventDefault();
-            statusElm.append('<div class="error">E-mail is invalid</div>');
+            document.getElementById("e-mail").classList.add('failed');
         }
         if (email === "") {
             event.preventDefault();
-            statusElm.append('<div class="error">E-mail field is empty</div>');
+            document.getElementById("e-mail").classList.add('failed');
         }
         if (name === "") {
             event.preventDefault();
-            statusElm.append('<div class="error">Name field is empty</div>');
+            document.getElementById("name").classList.add('failed');
         }
         if (message === "") {
             event.preventDefault();
-            statusElm.append('<div class="error">Message field is empty</div>');
+            document.getElementById("message").classList.add('failed');
         }
 
         var form = document.getElementById("contact-form");
