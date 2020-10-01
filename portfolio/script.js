@@ -67,7 +67,6 @@ function move(target) {
 
 $(document).ready(function () {
     $('.submit').click(function (event) {
-        event.preventDefault();
         var email = $('.e-mail').val();
         var name = $('.name').val();
         var message = $('.message').val();
@@ -78,7 +77,7 @@ $(document).ready(function () {
             event.preventDefault();
             statusElm.append('<div class="error">E-mail is invalid</div>');
         }
-        if (email === ""){
+        if (email === "") {
             event.preventDefault();
             statusElm.append('<div class="error">E-mail field is empty</div>');
         }
@@ -86,9 +85,44 @@ $(document).ready(function () {
             event.preventDefault();
             statusElm.append('<div class="error">Name field is empty</div>');
         }
-        if (message === ""){
+        if (message === "") {
             event.preventDefault();
             statusElm.append('<div class="error">Message field is empty</div>');
+        }
+
+        var form = document.getElementById("contact-form");
+        var button = document.getElementById("submit");
+        var status = document.getElementById("status");
+
+        function success() {
+            form.reset();
+            button.style = "display: none ";
+            status.innerHTML = '<div class="success">Message sent</div>';
+        }
+
+        function error() {
+            status.innerHTML = '<div class="error">Something went wrong!</div>';
+        }
+
+        form.addEventListener("submit", function (ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                    success(xhr.response, xhr.responseType);
+                } else {
+                    error(xhr.status, xhr.response, xhr.responseType);
+                }
+            };
+            xhr.send(data);
         }
     });
 });
