@@ -21,9 +21,6 @@
                     <button class="nav-button" onclick="move('home')">Home</button>
                 </li>
                 <li>
-                    <button class="nav-button" onclick="move('about')">About me</button>
-                </li>
-                <li>
                     <button class="nav-button" onclick="move('work')">My work</button>
                 </li>
                 <li>
@@ -67,28 +64,14 @@
                     <i class="fas fa-file sub-link-i"></i>
                 </a>
             </div>
-            <div class="action">
-                <button onclick="move('work')" class="action-button">See my work</button>
-            </div>
             <div class="arrow-container wrap">
-                <button onclick="move('about')" class="arrow-button animated bounce">
+                <button onclick="move('work')" class="arrow-button animated bounce">
                     <i class="fas fa-chevron-down arrow-down"></i>
                 </button>
             </div>
         </div>
     </div>
     <div class="svg1">
-        <svg viewbox="0 0 800 125" class="svg">
-            <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
-            </path>
-        </svg>
-    </div>
-    <div id="about" class="about main">
-        <div class="section-title">
-            About me
-        </div>
-    </div>
-    <div class="svg2">
         <svg viewbox="0 0 800 125" class="svg">
             <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
             </path>
@@ -124,32 +107,8 @@
                     </div>
                     <div class="project-links">
                         <a class="project-button h3-fluid" target="_blank" href="https://teeemwork.web.app">Live</a>
-                        <a class="project-button h3-fluid" target="_blank" href="https://github.com/karosamu/teeemwork">Source</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img class="project-image" src="https://i.postimg.cc/KYNj1yrG/image.png" alt="Project Image" />
-                </div>
-                <div class="project-content">
-                    <div class="project-text">
-                        <div class="project-text-header">
-                            <span class="project-title h1-fluid">Todo List</span>
-                            <span class="tag">Unfinished</span>
-                        </div>
-                        <div class="project-text-info h3-fluid">
-                            Developed using: React<br>
-                            A quick project to see how React works.<br>
-                            <div class="more-info">
-                                More info in the Github repository.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <a class="project-button h3-fluid" target="_blank" href="https://reacttodoks.web.app/">Live</a>
-                        <a class="project-button h3-fluid" target="_blank" href="https://github.com/karosamu/react-todo">
-                            Source</a>
+                        <a class="project-button h3-fluid" target="_blank"
+                            href="https://github.com/karosamu/teeemwork">Source</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +146,7 @@
             </div>
         </div>
     </div>
-    <div class="svg1">
+    <div class="svg2">
         <svg viewbox="0 0 800 125" class="svg">
             <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
             </path>
@@ -199,26 +158,25 @@
         </div>
         <div class="contact-section">
             <form action="https://formspree.io/f/mbjplqle" method="POST" class="contact-form" id="contact-form">
-                <label class="name-container">
+                <label class="name-container" id="name-container">
                     <span>Your name:</span>
                     <input onfocus="removecss('name')" type="text" name="Name" id="name" class="name form-colors">
                 </label>
-                <label class="email-container">
+                <label class="email-container" id="e-mail-container">
                     <span>Your email:</span>
-                    <input onfocus="removecss('e-mail')" type="text" name="Email address" id="e-mail" class="e-mail form-colors">
+                    <input onfocus="removecss('e-mail')" type="text" name="Email address" id="e-mail"
+                        class="e-mail form-colors">
                 </label>
-                <label class="message-container">
+                <label class="message-container" id="message-container">
                     <span>Your message:</span>
-                    <textarea spellcheck="false" onfocus="removecss('message')" name="Message" id="message" class="message form-colors"></textarea>
+                    <textarea spellcheck="false" onfocus="removecss('message')" name="Message" id="message"
+                        class="message form-colors"></textarea>
                 </label>
                 <button type="submit" value="Send" id="submit" class="submit">Send</button>
             </form>
-            <span>Or</span>
-            <span><i class="fas fa-envelope sub-link-i"></i>Email me: karolissamuolis@gmail.com</span>
-            <span><i class="fab fa-linkedin sub-link-i"></i>Message me on LinkedIn: karolis-samuolis</span>
         </div>
     </div>
-    <div class="svg2">
+    <div class="svg1">
         <svg viewbox="0 0 800 125" class="svg">
             <path id="curve" d="M 0 50 Q 200 100 400 50 Q 600 0 800 50 L 800 0 L 0 0 Z">
             </path>

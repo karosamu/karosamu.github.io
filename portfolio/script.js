@@ -98,11 +98,25 @@ $(document).ready(function () {
         var button = document.getElementById("submit");
         var status = document.getElementById("status");
 
+        var nameEl = document.getElementById("name-container");
+        var emailEl = document.getElementById("e-mail-container");
+        var messageEl = document.getElementById("message-container");
+
         function success() {
             form.reset();
-            button.style = "display: none ";
+            button.style = "display: none;";
+            //nameEl.style = "display: none;";
+            //emailEl.style = "display: none;";
+            //messageEl.style = "display: none;";
             status.innerHTML = '<div class="success">Message sent</div>';
         }
+
+        /*function success() {
+            form.reset();
+            status.style = "display: unset";
+            button.style = "display: none ";
+            status.innerHTML = '<div class="success">Message sent</div>';
+        }*/
 
         function error() {
             status.innerHTML = '<div class="error">Something went wrong!</div>';
