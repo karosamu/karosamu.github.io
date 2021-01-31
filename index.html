@@ -8,20 +8,33 @@
         <script src="script.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     </head>
     <body>
         <nav>
             <div class="nav-container">
-                <a href="#">samuolis<span class="secondary">.me</span></a>
+                <a target="_blank" href="https://samuolis.me">samuolis<span class="secondary">.me</span></a>
                 <div class="links">
-                    <a href="#"><span class="secondary">.</span>work<span class="secondary">()</span></a>
-                    <a href="#"><span class="secondary">.</span>about<span class="secondary">()</span></a>
+                    <a href="#"><span class="secondary"></span>work<span class="secondary">()</span></a>
+                    <a href="#"><span class="secondary"></span>about<span class="secondary">()</span></a>
+                    <a href="#"><span class="secondary"></span>contact<span class="secondary">()</span></a>
+                </div>
+                <div class="hamburger">
+                    <button class="menu-button" onclick="openMenu()">menu<span class="secondary">()</span></button>
+                    <div id="hamburger-items" class="hamburger-items">
+                        <a href="#"><span class="secondary"></span>work<span class="secondary">()</span></a>
+                        <a href="#"><span class="secondary"></span>about<span class="secondary">()</span></a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <span class="header">.me(<span class="secondary">"Karolis Samuolis"</span>)</span>
-            <span class="textbox">A front-end developer</span>
+            <span class="header">Karolis<span class="secondary"> Samuolis</span></span>
+            <span class="textbox">A <span class="secondary">front-end</span> developer</span>
+            <div class="icon-container">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
         </div>
     </body>
 </html>

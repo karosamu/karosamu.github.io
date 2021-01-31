@@ -8,6 +8,10 @@
 	--accent-3: #4f5d75;
 }
 
+* {
+	outline: none;
+}
+
 body {
 	margin: 0;
 	width: 100vw;
@@ -15,6 +19,7 @@ body {
 	background-color: var(--background);
 	display: grid;
 	grid-template-rows: 1fr 10fr;
+	overflow-x: hidden;
 }
 
 .nav-container {
@@ -24,12 +29,12 @@ body {
 	font-family: 'Fira Mono', monospace;
 	justify-content: space-between;
 	height: 100%;
-	padding: 0px 20px;
+	padding: 0px 2vw;
 }
 
 nav {
 	width: 100vw;
-	background-color: var(--background-light);
+	background-color: var(--background);
 }
 
 nav a {
@@ -46,7 +51,6 @@ nav a:hover {
 	transition: 0.2s;
 	color: var(--accent);
 	border-bottom: 8px solid var(--accent);
-
 }
 
 .links {
@@ -69,4 +73,61 @@ nav a:hover {
 
 .secondary {
 	color: var(--accent);
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger-items {
+	transition: 0.2s;
+	position: absolute;
+	z-index: 2;
+	top: +40px;
+	right: -500px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.hamburger-items a {
+	padding: 10px 0;
+	margin-left: auto; 
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 450px) {
+	.links { display: none; }
+	.hamburger { display: unset; }
+	nav a:hover { border-bottom: none; }
+
+}
+
+@media only screen and (max-width: 300px) {
+	nav .secondary {
+		display: none;
+	}
+}
+
+.menu-button {
+	font-family: 'Fira Mono', monospace;
+	font-size: 1.5em;
+	background-color: #00000000;
+	border: none;
+	color: var(--text);
+}
+
+.menu-button:hover {
+	transition: 0.2s;
+	color: var(--accent);
+}
+
+.icon-container {
+	display: flex;
+}
+
+.icon-container i {
+	padding: 10px 10px 0 0;
 }
