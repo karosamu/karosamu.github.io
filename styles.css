@@ -83,19 +83,27 @@ nav a:hover {
 	transition: 0.2s;
 	position: absolute;
 	z-index: 2;
-	top: +8vh;
+	top: +10vh;
 	right: -500px;
 	display: flex;
 	flex-direction: column;
 	background-color: var(--background);
 	border-radius: 10px;
-	padding: 10px;
+	padding: 0 10px 10px 10px;
 }
 
 .hamburger-items a {
-	padding: 10px 0;
+	padding: 10px 10px;
 	margin-left: auto; 
 	margin-right: 0;
+}
+
+.hamburger-items:first-child {
+	padding: 0
+}
+
+.hamburger-items:last-child {
+	padding: 0
 }
 
 @media only screen and (max-width: 580px) {
