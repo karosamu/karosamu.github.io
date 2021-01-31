@@ -18,7 +18,7 @@ body {
 	height: 100vh;
 	background-color: var(--background);
 	display: grid;
-	grid-template-rows: 1fr 10fr;
+	grid-template-rows: 1fr 9fr;
 	overflow-x: hidden;
 }
 
@@ -83,7 +83,7 @@ nav a:hover {
 	transition: 0.2s;
 	position: absolute;
 	z-index: 2;
-	top: +40px;
+	top: +8vh;
 	right: -500px;
 	display: flex;
 	flex-direction: column;
@@ -98,7 +98,7 @@ nav a:hover {
 	margin-right: 0;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 580px) {
 	.links { display: none; }
 	.hamburger { display: unset; }
 	nav a:hover { border-bottom: none; }
