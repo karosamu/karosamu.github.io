@@ -1,10 +1,4 @@
-:root {
-	--background: #080708;
-	--foreground: #EBF5EE;
-	--text: var(--foreground);
-	--accent: #78A1BB;
-}
-
+@import "./colors.css";
 * {
 	outline: none;
 }
@@ -49,7 +43,7 @@ nav a {
 nav a:hover {
 	transition: 0.2s;
 	color: var(--accent);
-	border-bottom: 8px solid var(--accent);
+	border-bottom: 1px solid var(--accent);
 }
 
 .links {
@@ -132,25 +126,22 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 400px) {
-	.hide {
-		display: none;
-	}
+	.hide { display: none; }
 	.smaller {
 		transition: 0.2s;
-		font-size: 3em;
+		font-size: 4em;
 	}
 	.smaller-subheader {
 		transition: 0.2s;
-		font-size: 1.5em;
-	}
-	.smaller-textbox {
-		transition: 0.2s;
-		font-size: 1em;
+		font-size: 1.8em;
 	}
 	.smaller-icons {
 		transition: 0.2s;
 		font-size: 1em;
 	}
+	.subgrid { flex-direction: column !important; }
+	.icon-container { justify-content: space-evenly;}
+	.icon-div { padding-bottom: 20px;}
 }
 
 .menu-button {
@@ -185,14 +176,25 @@ nav a:hover {
 
 .icon-div {
 	margin: 0 10px 0 0;
+	padding-right: 20px;
+
 }
 
 .inner-icon-div {
 	height: 100%;
-	display: flex;
 }
 
 .icon-container i {
 	text-align: center;
 	font-size: 2.5em;
+}
+
+.icon-link {
+	display: flex;
+	flex-direction: column;
+}
+
+.subgrid {
+	display: flex;
+	flex-direction: row;
 }

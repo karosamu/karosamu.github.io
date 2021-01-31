@@ -1,0 +1,6 @@
+:root {
+	--background: #080708;
+	--foreground: #EBF5EE;
+	--text: var(--foreground);
+	--accent: #78A1BB;
+}
