@@ -31,6 +31,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	min-height: 50px;
 	height: 10vh;
 	background-image: linear-gradient(var(--background),#00000000);
 }
@@ -100,7 +101,7 @@ nav a:hover {
 	transition: 0.2s;
 	position: absolute;
 	z-index: 2;
-	top: +10vh;
+	top: max(+50px, 10vh);
 	right: -500px;
 	display: flex;
 	flex-direction: column;
@@ -133,6 +134,22 @@ nav a:hover {
 @media only screen and (max-width: 400px) {
 	.hide {
 		display: none;
+	}
+	.smaller {
+		transition: 0.2s;
+		font-size: 3em;
+	}
+	.smaller-subheader {
+		transition: 0.2s;
+		font-size: 1.5em;
+	}
+	.smaller-textbox {
+		transition: 0.2s;
+		font-size: 1em;
+	}
+	.smaller-icons {
+		transition: 0.2s;
+		font-size: 1em;
 	}
 }
 
@@ -177,9 +194,5 @@ nav a:hover {
 
 .icon-container i {
 	text-align: center;
-	width: 50px;
 	font-size: 2.5em;
-}
-
-.icon-link {
 }
