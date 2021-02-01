@@ -7,3 +7,5 @@ const openMenu = () => {
         document.getElementById("hamburger-items").style.right = "calc(2vw - 3px)";
     toggledMenu = !toggledMenu;
 }
+
+console.log(window.location.hostname.split("."));

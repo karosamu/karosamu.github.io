@@ -44,6 +44,7 @@ nav a:hover {
 	transition: 0.2s;
 	color: var(--accent);
 	border-bottom: 1px solid var(--accent);
+	padding-bottom: 10px;
 }
 
 .links {
