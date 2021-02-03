@@ -3,12 +3,13 @@ var fr = new FileReader();
 
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-        function loadContent() {
+        const loadContent = () => {
             var fragmentId = location.hash.substr(1);
             fetch(`./pages/${fragmentId}.html`)
                 .then((response) => response.text())
                 .then((data) => {
                         document.getElementById("app").innerHTML = data;
+                        assignActive(fragmentId)
                     });
     
         }
@@ -21,6 +22,17 @@ document.onreadystatechange = function () {
         window.addEventListener("hashchange", loadContent);
     }
 };
+
+const assignActive = (fragmentId) => {
+    var activeElements = document.querySelectorAll(".active");
+    [].forEach.call(activeElements, function (el) {
+        el.classList.remove("active");
+    });
+    var toActivateElements = document.querySelectorAll("."+fragmentId);
+    [].forEach.call(toActivateElements, function (el) {
+        el.classList.add("active");
+    });
+}
 
 const openMenu = () => {
     if (toggledMenu)

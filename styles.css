@@ -28,7 +28,7 @@ nav {
 	width: 100vw;
 	min-height: 50px;
 	height: 10vh;
-	/*background-image: linear-gradient(var(--background),#00000000);*/
+	background-image: linear-gradient(var(--background),#00000000);
 }
 
 nav a {
