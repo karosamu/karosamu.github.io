@@ -1,6 +1,7 @@
 @import "./colors.css";
 * {
 	outline: none;
+	text-decoration: none;
 }
 
 body {
@@ -27,10 +28,13 @@ nav {
 	width: 100vw;
 	min-height: 50px;
 	height: 10vh;
-	background-image: linear-gradient(var(--background),#00000000);
+	/*background-image: linear-gradient(var(--background),#00000000);*/
 }
 
 nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 0px 10px;
 	font-size: 1.5em;
 	text-decoration: none;
@@ -166,13 +170,22 @@ nav a:hover {
 }
 
 .icon-container a {
+	transition: 0.2s;
 	color: var(--text);
-	text-decoration: none;
 }
 
 .icon-container a:hover {
 	transition: 0.2s;
 	color: var(--accent);
+}
+
+.icon-container a:hover i {
+	transition: 0.2s;
+	color: var(--text);
+}
+
+.icon-container i {
+	transition: 0.2s;
 }
 
 .icon-div {
@@ -198,4 +211,17 @@ nav a:hover {
 .subgrid {
 	display: flex;
 	flex-direction: row;
+}
+
+.active {
+	color: var(--accent) !important;
+}
+
+.links .active {
+	border-bottom: 1px solid var(--accent);
+	padding-bottom: 10px;
+}
+
+.spacer {
+    padding: 0px 10px;
 }
