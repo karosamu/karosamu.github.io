@@ -1,4 +1,10 @@
 @import "./colors.css";
+@import "./styles/about.css";
+@import "./styles/contact.css";
+@import "./styles/work.css";
+@import "./styles/home.css";
+@import "./styles/nav.css";
+
 * {
 	outline: none;
 	text-decoration: none;
@@ -12,51 +18,6 @@ body {
 	background-color: var(--background);
 }
 
-.nav-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Fira Mono', monospace;
-	justify-content: space-between;
-	height: 100%;
-	padding: 0px 2vw;
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	min-height: 50px;
-	height: 10vh;
-	background-image: linear-gradient(var(--background),#00000000);
-}
-
-nav a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0px 10px;
-	font-size: 1.5em;
-	text-decoration: none;
-	color: var(--text);
-	transition: 0.2s;
-	border-bottom: 0px solid #00000000;
-
-}
-
-nav a:hover {
-	transition: 0.2s;
-	color: var(--accent);
-	border-bottom: 1px solid var(--accent);
-	padding-bottom: 10px;
-}
-
-.links {
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -68,59 +29,33 @@ nav a:hover {
 }
 
 .content {
-	margin: 30vh 10vw;
+	margin: 20vh 10vw;
 	display: flex;
 	flex-direction: column;
 }
 
-.header {
+.mono-text {
+	font-family: 'Fira Mono', monospace;
+}
+
+.text {
 	font-family: 'Fira Sans', sans-serif;
+}
+
+.header {
 	font-size: 5em;
 }
 
 .subheader {
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 2em;
 }
 
 .textbox {
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 1em;
 }
 
 .secondary {
 	color: var(--accent);
-}
-
-.hamburger {
-	display: none;
-}
-
-.hamburger-items {
-	transition: 0.2s;
-	position: absolute;
-	z-index: 2;
-	top: max(+50px, 10vh);
-	right: -500px;
-	display: flex;
-	flex-direction: column;
-	background-color: var(--background);
-	border-radius: 10px;
-	padding: 0 10px 10px 10px;
-}
-
-.hamburger-items a {
-	padding: 10px 10px;
-	margin-left: auto; 
-	margin-right: 0;
-}
-
-.hamburger-items:first-child {
-	padding: 0
-}
-
-.hamburger-items:last-child {
-	padding: 0
 }
 
 @media only screen and (max-width: 580px) {
@@ -134,11 +69,11 @@ nav a:hover {
 	.hide { display: none; }
 	.smaller {
 		transition: 0.2s;
-		font-size: 4em;
+		font-size: 3em;
 	}
 	.smaller-subheader {
 		transition: 0.2s;
-		font-size: 1.8em;
+		font-size: 1.5em;
 	}
 	.smaller-icons {
 		transition: 0.2s;
@@ -147,81 +82,30 @@ nav a:hover {
 	.subgrid { flex-direction: column !important; }
 	.icon-container { justify-content: space-evenly;}
 	.icon-div { padding-bottom: 20px;}
+	/*.project-item { height: 100px; }*/
+	.inner-image-container { width: 100%; margin: 0; height: 100%; justify-content: space-evenly; border-radius: 0;}
+	.inner-action-container { flex-direction: column;}
+	.inner-action-container a {
+		padding-bottom: 10px;
+		text-align: left;
+	}
+	.inner-action-container a:not(:last-child) { border-right: 0px;}
+	.smaller-image-header {
+		font-size: 1.4em;
+		color: var(--foreground);
+	}
+	.project-item {
+		border: 1px solid var(--accent-transparent);
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
 }
 
-.menu-button {
-	font-family: 'Fira Mono', monospace;
-	font-size: 1.5em;
-	background-color: #00000000;
-	border: none;
-	color: var(--text);
-	cursor: pointer;
-}
-
-.menu-button:hover {
-	transition: 0.2s;
-	color: var(--accent);
-}
-
-.icon-container {
-	display: flex;
-	flex-direction: row;
-	margin: 10px 0 20px 0;
-}
-
-.icon-container a {
-	transition: 0.2s;
-	color: var(--text);
-}
-
-.icon-container a:hover {
-	transition: 0.2s;
-	color: var(--accent);
-}
-
-.icon-container a:hover i {
-	transition: 0.2s;
-	color: var(--text);
-}
-
-.icon-container i {
-	transition: 0.2s;
-}
-
-.icon-div {
-	margin: 0 10px 0 0;
-	padding-right: 20px;
-
-}
-
-.inner-icon-div {
-	height: 100%;
-}
-
-.icon-container i {
-	text-align: center;
-	font-size: 2.5em;
-}
-
-.icon-link {
-	display: flex;
-	flex-direction: column;
-}
-
-.subgrid {
-	display: flex;
-	flex-direction: row;
-}
-
-.active {
-	color: var(--accent) !important;
-}
-
-.links .active {
-	border-bottom: 1px solid var(--accent);
-	padding-bottom: 10px;
-}
-
-.spacer {
-    padding: 0px 10px;
+@media only screen and (max-width: 200px) {
+	.nav-alt {
+		display: unset;
+	}
+	.nav-main {
+		display: none;
+	}
 }

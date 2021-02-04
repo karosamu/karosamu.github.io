@@ -5,12 +5,12 @@ document.onreadystatechange = function () {
     if (document.readyState == "complete") {
         const loadContent = () => {
             var fragmentId = location.hash.substr(1);
-            fetch(`./pages/${fragmentId}.html`)
+            fetch(`./pages/${location.pathname.substr(1)}/${fragmentId}.html`)
                 .then((response) => response.text())
                 .then((data) => {
-                        document.getElementById("app").innerHTML = data;
-                        assignActive(fragmentId)
-                    });
+                    document.getElementById("app").innerHTML = data;
+                    assignActive(fragmentId);
+                });
     
         }
 
@@ -42,6 +42,5 @@ const openMenu = () => {
             "calc(2vw - 3px)";
     toggledMenu = !toggledMenu;
 };
-
 
 
