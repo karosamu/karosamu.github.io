@@ -102,3 +102,13 @@ ul {
 .inner-action-container a:not(:last-child) {
     border-right: 1px solid var(--accent);
 }
+
+.project-list:first-child .project-item{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project-list:last-child .project-item{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

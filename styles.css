@@ -109,3 +109,14 @@ body {
 		display: none;
 	}
 }
+
+.active {
+	color: var(--accent) !important;
+	cursor: default;
+	pointer-events: none;
+}
+
+.links .active {
+	border-bottom: 1px solid var(--accent);
+	padding-bottom: 10px;
+}

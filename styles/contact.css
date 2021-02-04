@@ -1,0 +1,83 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.group input, textarea {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: min(400px, 80%);
+    border: none;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.group input:focus {
+    outline: none;
+}
+
+.group label {
+    color: var(--text-transparent);
+    font-size: 18px;
+    font-family: "Open sans", sans-serif;
+    position: absolute;
+    pointer-events: none;
+    left: 25px;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+.group input:focus ~ label,
+.group input:focus ~ label,
+.group textarea:focus ~ label {
+    top: -13px;
+    font-size: 14px;
+    color: var(--accent);
+    background-color: var(--background);
+    padding: 0px 5px 0px 5px;
+}
+
+.group input:not(:placeholder-shown) ~ label,
+.group input:not(:placeholder-shown) ~ label,
+.group textarea:not(:placeholder-shown) ~ label{
+    top: -13px;
+    font-size: 14px;
+    color: var(--accent);
+    background-color: var(--background);
+    padding: 0px 5px 0px 5px;
+}
+
+.form-upper-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.group input,textarea {
+    padding-left: 22px;
+    resize: none;
+}
+
+.group textarea {
+    height: 200px;
+}
+
+.send-button {
+    transition: 0.3s;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: min(400px, 80%);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: var(--background);
+}
