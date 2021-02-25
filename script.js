@@ -94,3 +94,14 @@ const setForm = () => {
         }
     };
 };
+
+var consoleStyle="font-size: 16px;"+
+    "background: linear-gradient(to right, #e66465, #9198e5);"+
+    "color: white;"+
+    "text-align: center;"+
+    "padding: 10x 15px;"+
+    "width: 100%;"+
+    "border-radius: 20px;";
+
+var consoleText="%cHello, new phone, who dis?"
+console.log(consoleText, consoleStyle);
