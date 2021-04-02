@@ -1,0 +1,93 @@
+.nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0px 2vw;
+}
+
+nav {
+	z-index: 499;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	min-height: 50px;
+	height: 10vh;
+	background-image: linear-gradient(var(--background),#00000000);
+}
+
+nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 10px;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: var(--text);
+	transition: 0.2s;
+	border-bottom: 0px solid #00000000;
+
+}
+
+nav a:hover {
+	transition: 0.2s;
+	color: var(--accent);
+	border-bottom: 1px solid var(--accent);
+	padding-bottom: 10px;
+}
+
+.links {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger-items {
+	transition: 0.2s;
+	position: absolute;
+	z-index: 500;
+	top: max(+50px, 10vh);
+	right: -500px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+	border-radius: 10px;
+	padding: 0 10px 10px 10px;
+}
+
+.hamburger-items a {
+	padding: 10px 10px;
+	margin-left: auto; 
+	margin-right: 0;
+}
+
+.hamburger-items:first-child {
+	padding: 0
+}
+
+.hamburger-items:last-child {
+	padding: 0
+}
+
+.menu-button {
+	font-family: 'Fira Mono', monospace;
+	font-size: 1.5em;
+	background-color: #00000000;
+	border: none;
+	color: var(--text);
+	cursor: pointer;
+}
+
+.menu-button:hover {
+	transition: 0.2s;
+	color: var(--accent);
+}
+
+.nav-alt {
+	display: none;
+}

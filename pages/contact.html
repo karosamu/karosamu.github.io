@@ -1,0 +1,30 @@
+<div class="content">
+    <span class="header smaller text"
+        >Contact<span class="secondary"> Me</span></span
+    >
+    <div>
+        <form class="form-container" action="" method="POST" id="contact-form">
+            <div class="form-upper-container">
+                <div class="group">
+                    <input placeholder=" " required type="text" name="Name" id="name" />
+                    <label>Name</label>
+                </div>
+                <div class="group">
+                    <input placeholder=" " required type="email" name="Email address" id="e-mail" />
+                    <label>E-mail</label>
+                </div>
+            </div>
+            <div class="group">
+                <textarea required
+                    minlength="20"
+                    spellcheck="false"
+                    name="Message"
+                    id="message"
+                    placeholder=" "
+                ></textarea>
+                <label>Message</label>
+            </div>
+            <button class="send-button" type="submit" value="Send" id="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+</div>

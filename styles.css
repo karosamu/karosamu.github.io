@@ -1,0 +1,122 @@
+@import "./colors.css";
+@import "./styles/about.css";
+@import "./styles/contact.css";
+@import "./styles/work.css";
+@import "./styles/home.css";
+@import "./styles/nav.css";
+
+* {
+	outline: none;
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--background);
+	color: var(--text);
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	margin: 20vh 10vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.mono-text {
+	font-family: 'Fira Mono', monospace;
+}
+
+.text {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.header {
+	font-size: 5em;
+}
+
+.subheader {
+	font-size: 2em;
+}
+
+.textbox {
+	font-size: 1em;
+}
+
+.secondary {
+	color: var(--accent);
+}
+
+@media only screen and (max-width: 580px) {
+	.links { display: none; }
+	.hamburger { display: unset; }
+	nav a:hover { border-bottom: none; }
+
+}
+
+@media only screen and (max-width: 400px) {
+	.hide { display: none; }
+	.smaller {
+		transition: 0.2s;
+		font-size: 3em;
+	}
+	.smaller-subheader {
+		transition: 0.2s;
+		font-size: 1.5em;
+	}
+	.smaller-icons {
+		transition: 0.2s;
+		font-size: 1em;
+	}
+	.subgrid { flex-direction: column !important; }
+	.icon-container { justify-content: space-evenly;}
+	.icon-div { padding-bottom: 20px;}
+	/*.project-item { height: 100px; }*/
+	.inner-image-container { width: 100%; margin: 0; height: 100%; justify-content: space-evenly; border-radius: 0;}
+	.inner-action-container { flex-direction: column;}
+	.inner-action-container a {
+		padding-bottom: 10px;
+		text-align: left;
+	}
+	.inner-action-container a:not(:last-child) { border-right: 0px;}
+	.smaller-image-header {
+		font-size: 1.4em;
+		color: var(--foreground);
+	}
+	.project-item {
+		border: 1px solid var(--accent-transparent);
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 200px) {
+	.nav-alt {
+		display: unset;
+	}
+	.nav-main {
+		display: none;
+	}
+}
+
+.active {
+	color: var(--accent) !important;
+	cursor: default;
+	pointer-events: none;
+}
+
+.links .active {
+	border-bottom: 1px solid var(--accent);
+	padding-bottom: 10px;
+}
